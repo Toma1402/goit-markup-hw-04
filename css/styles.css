@@ -14,6 +14,8 @@
   --secondary-backgr-cl: #f5f4fa;
   --main-btn-hover: #188ce8;
   --border-portfolio: #eeeeee;
+  --client-color: #afb1b8;
+  --social-f-col: rgba(255, 255, 255, 0.1);
 
   --main-font: 'Roboto', sans-serif;
   --secondaty-font: 'Raleway', sans-serif;
@@ -215,7 +217,6 @@ img {
   width: 70px;
   height: 70px;
 }
-
 /* To-do section */
 .to-do {
   padding-top: 0;
@@ -254,6 +255,8 @@ img {
 .team-item {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team {
@@ -305,6 +308,39 @@ img {
 .social:hover .social-icon {
   fill: var(--white);
 }
+/*Clients section*/
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+}
+
+.client-link {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid var(--client-color);
+  border-radius: 4px;
+  color: var(--client-color);
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-cl);
+  color: var(--accent-cl);
+}
+.client-icon {
+  display: block;
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+
 /* footer section */
 .footer-logo {
   margin-bottom: 20px;
@@ -324,6 +360,7 @@ img {
   flex-direction: column;
   margin-top: 20px;
   font-style: normal;
+  width: 231px;
 }
 .footer-mail {
   margin-bottom: 9px;
@@ -335,6 +372,32 @@ img {
 .footer-mail,
 .footer-phone {
   color: rgba(255, 255, 255, 0.6);
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+.join {
+  margin-left: 70px;
+}
+.join-title {
+  margin: 0;
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.join-list {
+  display: flex;
+  gap: 10px;
+}
+.join-bg {
+  background-color: var(--social-f-col);
+}
+.join-col {
+  fill: var(--white);
 }
 /* PORTFOLIO PAGE */
 .visually-hidden {
@@ -366,7 +429,10 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
-
+.card-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .head-descr {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -415,4 +481,6 @@ img {
 .portfolio-btn:focus {
   color: var(--white);
   background-color: var(--accent-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
