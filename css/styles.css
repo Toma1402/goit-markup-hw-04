@@ -279,21 +279,17 @@ img {
 }
 /*SVG*/
 .team-social {
-  width: 206px;
-
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--secondary-text-color);
 }
 .social {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
