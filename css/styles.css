@@ -282,7 +282,7 @@ img {
 }
 
 .social-icon {
-  fill: var(--secondary-text-color);
+  fill: #afb1b8;
 }
 .social {
   display: flex;
