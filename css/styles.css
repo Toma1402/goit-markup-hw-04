@@ -297,7 +297,8 @@ img {
 .social:focus {
   background-color: var(--accent-cl);
 }
-.social:hover .social-icon {
+.social:hover .social-icon,
+.social:focus .social-icon {
   fill: var(--white);
 }
 /*Clients section*/
